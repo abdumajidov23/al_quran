@@ -122,7 +122,7 @@ let BotService = class BotService {
     }
     async getNamozVaqtlarini(ctx) {
         try {
-            const response = await axios_1.default.get('https://api.aladhan.com/v1/timingsByCity/20-10-2024?city=Tashkent&country=Uzbekistan&method=2');
+            const response = await axios_1.default.get('https://api.aladhan.com/v1/timingsByCity/20-10-2024?city=Beijing&country=China&method=2');
             const now = new Date();
             const hours = now.getHours();
             const minuts = now.getMinutes().toString().padStart(2, '0');
